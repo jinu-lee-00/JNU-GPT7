@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+	font-family: 'Pretendard Variable', sans-serif;
+
+}
+
+.chat-app {
+    position: relative;
+    z-index: 1;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.tab {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 14px;
+    white-space: nowrap;
+    color: black; /* 기본 텍스트 색상 추가 */
+}
+
+.tab:hover {
+    background-color: #e1e1e1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tab.active {
+    background-color: #326eef;
+    color: white;
+}
+    
+#myLocationButton {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+    
+#map {
+    height: calc(100% - 50px);
+    width: 100%;
+    z-index: 10;
+}
+#infoPanel {
+    position: fixed;
+    bottom: -100%;
+    left: 50%;
+	
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    transition: bottom 0.3s ease-in-out;
+    z-index: 2000;
+    transform: translateX(-50%); /* X축에서 -50% 만큼 이동하여 정확한 중앙 정렬 */
+
+	border-top-left-radius: 50px;  /* 왼쪽 상단 모서리 둥글게 */
+    border-top-right-radius: 50px; /* 오른쪽 상단 모서리 둥글게 */
+
+	overflow-y: auto;
+}
+
+#infoPanelContent {
+    display: flex;
+    padding: 20px;
+	
+}
+
+.store-image-container {
+    flex: 0 0 auto;
+    margin-right: 20px;
+
+}
+.store-image {
+    border-radius: 10px;
+    object-fit: cover;
+	width: 60px;
+	height: auto;
+}
+
+.store-details {
+    flex: 1;
+    font-size: 15px;       /* 글꼴 크기 조정 */
+    color: #326eef;           /* 글꼴 색상 조정 */
+	padding-top: 5px;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #eeeeee;
+	color: #666;
+	font-weight: bold;
+    border-radius: 40px;
+	border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-button img {
+	width: 10px; 
+	padding: 10px 5px 5px 5px;
+}
+
+.info-panel {
+	padding: 10px 10px 10px 10px;
+	width: 100%;
+	height: 30%;
+
+}
+
+
+
+#storeName {
+	color: #326eef;
+    margin: 0 0 10px;
+	font-size: 130%
+}
+
+#storeAddress {
+    font-size: 16px;       /* 글꼴 크기 조정 */
+    color: #333;           /* 글꼴 색상 조정 */
+    font-weight: bold;     /* 글꼴 두께 조정 */
+	padding-bottom: 5px;
+
+    border-bottom: 1px solid #ccc; /* 하단 테두리 추가 */
+}
+
+
+.info-panel-content p {
+    margin: 5px 0;
+    font-size: 90%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+#naverLink{
+	margin-left: 5px;
+}
+
+
+
