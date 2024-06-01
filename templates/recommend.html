@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JNU 학생을 위한 추천 앱</title>
+        <link rel="shortcut icon" href="static/images/favicon.ico">
+        <link rel="stylesheet" href="static/css/chat.css">
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/recommend.css">
+        <link rel="stylesheet" href="static/css/responsive.css">
+        <script src="static/js/recommend.js"></script>
+		<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet">
+		
+    </head>
+    <body>
+        <div class="mobile-content">
+            <header class="chat-header">
+                <div class="header-content">
+                    <div class="chat-title">
+                        <img src="static/images/logo.png" alt="LOGO" />
+                    </div>
+                    <span class="back">
+                        <a href="/">
+                            <img src="static/images/back.png" alt="back" />
+                        </a>
+                    </span>
+                </div>
+            </header>
+
+            <div class="container">
+                <div class="buttons_app">
+                    <a href="#" class="button" onclick="loadContent('apps')"><img src="static/images/RM_app_1.png" alt="JNU 추천 앱 모음"></a>
+                    <a href="#" class="button" onclick="loadContent('jobs')"><img src="static/images/RM_app_2.png" alt="취업정보 사이트"></a>
+                    <a href="#" class="button" onclick="loadContent('discounts')"><img src="static/images/RM_app_3.png" alt="대학생 무료&할인 앱"></a>
+                </div>
+                <div class="header">
+                    <h1 id="header-title"><a class="RM_app_color"></a></h1>
+                </div>
+                
+                <div id="content-area">
+                    <!-- 동적 컨텐츠가 삽입될 영역 --> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

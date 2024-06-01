@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>제휴 업체 정보</title>
+     <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=c516akz0bo"></script>
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/affiliate.css">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+	<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-content">  
+        <div class="chat-app">
+            <header class="chat-header">
+                <div class="header-content">
+                    <div class="chat-title">
+                        <a href="/">
+                            <img src="static/images/logo.png" alt="LOGO" />
+                        </a>
+                    </div>
+                    <span class="back">
+                        <a href="/">
+                            <img src="static/images/back.png" alt="back" />
+                        </a>
+                    </span>
+                </div>
+            </header>
+        </div>
+
+    <div class="tab-container">
+        <div class="tab" data-college="engineering">공과대학</div>
+        <div class="tab" data-college="humanities">인문대학</div>
+        <div class="tab" data-college="agriculture">농생대학</div>
+        <div class="tab" data-college="social">사회대학</div>
+        <div class="tab" data-college="veterinary">수의대학</div>
+        <div class="tab" data-college="business">경영대학</div>
+        <div class="tab" data-college="ai">AI융합대학</div>
+        <div class="tab" data-college="arts">예술대학</div>
+        <div class="tab" data-college="natural">자연대학</div>
+        <div class="tab" data-college="education">사범대학</div>
+    </div>
+	 </div>
+    <div id="map"></div>
+    <button id="myLocationButton" style="position: absolute; right: 20px; bottom: 20px; z-index: 1000; cursor: pointer; background-color: #fff; border: 1px solid #ccc; padding: 10px; border-radius: 4px;">
+        <img src="static/images/gps-icon.png" width="30" alt="GPS Location" />
+    </button>
+	
+	
+    <div id="infoPanel" class="info-panel">
+        <div id="infoPanelContent" class="info-panel-content">
+            <div class="store-image-container">
+                <img id="storeImage" src="#" alt="Store Image" class="store-image">
+            </div>
+            <div class="store-details">
+                <h2 id="storeName"></h2>
+                <p id="storeAddress"></p>
+                <p id="storeDetails"></p>
+                <div class="social-icons">
+                    <a href="#" id="instaLink" target="_blank">
+                        <img src="static/images/insta.png" alt="Instagram" class="social-icon" />
+                    </a>
+                    <a href="#" id="naverLink" target="_blank">
+                        <img src="static/images/naver.png" alt="Naver Map" class="social-icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button id="closeInfoPanel" class="close-button"><img src="static/images/close.png" alt="close"></button>
+    </div>
+    <script src="static/js/affiliate.js"></script>
+</body>
+</html>
