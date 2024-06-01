@@ -1,0 +1,106 @@
+/* CSS Document */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Pretendard Variable', sans-serif;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* 모든 요소의 box-sizing을 border-box로 설정 */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; /* 모든 요소의 box-sizing을 border-box로 설정 */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.header h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.button img {
+    width: 32%; /* 이미지 너비를 버튼의 너비에 맞춤 */
+    height: auto; /* 이미지의 높이를 자동으로 조정해 원본 비율 유지 */
+    border-radius: 5px; /* 버튼과 같이 모서리를 둥글게 처리 */
+}
+
+.custom-link {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #999999;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 100%; /* 컨테이너에 맞게 너비 조정 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    height: 80px;
+    position: relative; 
+    border: 1px solid #eeeeee; /* 테두리 추가 */
+    margin-bottom: 10px; /* 링크 사이 마진 추가 */
+}
+
+.link-icon {
+    width: 60px; /* 아이콘 크기 */
+    height: 60px;
+    margin-right: 20px;
+}
+
+.link-text-title {
+    font-size: 120%; /* 기본 텍스트 크기 */
+    color: #326eef; /* 텍스트 색상 */
+    font-weight: bold;
+}
+
+.link-text-sub {
+    display: block; /* 새 줄에서 시작 */
+    font-size: 80%; /* 상세 텍스트 크기 */
+    margin-top: 8px; /* 상단 여백 */
+}
+
+.link-arrow {
+    width: 30px; /* 화살표 아이콘 크기 */
+    height: auto;
+    float: right;
+    margin-right: 2px;
+    position: absolute;
+    right: 10px; /* 오른쪽에서 2px 떨어진 위치 */
+    top: 50%; /* 상위 요소의 중간 */
+    transform: translateY(-50%); /* Y축 기준 50% 이동 */
+}
+
+.buttons_app {
+    margin-bottom: 10px;
+}
+
+.RM_app_color {
+    color: #326eef;
+}
+
+.link-container {
+    display: block; /* 한 줄에 하나씩 나오도록 설정 */
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#content-area {
+    display: block; /* 자식 요소들이 한 줄에 하나씩 나오도록 설정 */
+    width: 100%;
+}

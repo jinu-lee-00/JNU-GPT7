@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Pretendard Variable', sans-serif;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* 모든 요소의 box-sizing을 border-box로 설정 */
+}
+
+.header {
+    background-color: #326eef;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 0 0 20px 20px;
+}
+.header img {
+    width: 100px;
+}
+.header h4 {
+    margin: 10px 0 10px 0; /* 위아래 간격을 조정 */
+    font-weight: normal; /* 볼드체 해제 */
+}
+.header h1 {
+    margin: 5px 0 10px 0; /* 위아래 간격을 조정 */
+}
+.header button {
+    background-color: white;
+    color: #326eef;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.main {
+    margin: 20px;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 30px; /* 상+하 좌+우 */
+    padding: 20px 30px;
+    position: relative; /* 카드 내부 요소의 절대 위치를 위한 설정 */
+}
+
+.card h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #326eef;
+}
+.card-content {
+    display: flex;
+    align-items: center;
+}
+.card img {
+    width: 50px;
+    margin-right: 20px;
+}
+.link-arrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10px;
+    height: auto;
+    color: gray; /* 화살표 색상을 회색으로 설정 */
+}
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+.main-text {
+    margin: 0;
+    font-size: 16px;
+    color: black;
+    font-weight: bold; /* 볼드체 적용 */
+}
+.sub-text {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
